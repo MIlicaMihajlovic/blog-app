@@ -14,6 +14,10 @@ class Posts {
         //dovlacimo id sa rute
     }
 
+    add(post) {
+        return axios.post('posts', post)
+    }
+
 }
 
 export const posts = new Posts();

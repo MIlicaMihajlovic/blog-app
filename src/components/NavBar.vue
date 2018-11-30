@@ -12,7 +12,7 @@
                        <router-link class="nav-link" :to="{name: 'posts'}">Posts</router-link>
                     </li>
                     <li class="nav-item">
-                        <router-link class="nav-link" :to="{name: 'single-post'}">Single post</router-link>
+                        <router-link class="nav-link" :to="{name: 'add-post'}">Add post</router-link>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
