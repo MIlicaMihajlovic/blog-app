@@ -37,7 +37,20 @@ export default {
 
         reset() {
             this.newPost = {}
-        }
+        },
+
+        editPost() {
+            posts.edit(this.$route.params.id, this.newPost)
+                .then(() => {
+                    this.$router.push({path: '/posts'})
+                })
+        },
+
+        // onSubmit() {
+        //     if(this.$route.params.id) {
+        //         this.editPost()
+        //     }
+        // }
     }
     
 }

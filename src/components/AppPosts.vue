@@ -3,7 +3,10 @@
         <ul class="list-unstyled">
             <li v-for="(post, index) in posts" :key="index">
                 {{ post.title }}
-                <button @click="navigateToPost(post.id)" type="button" class="btn btn-light">View post</button>
+                <button @click="navigateToPost(post.id)" type="button" class="btn btn-link">View post</button>
+                <router-link :to="{name: 'edit', params: {id: post.id}}">
+                    <button type="button" class="btn btn-light">Edit</button>
+                </router-link>
             </li>
         </ul>
         
